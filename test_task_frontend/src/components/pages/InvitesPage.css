@@ -1,0 +1,159 @@
+.invites-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.invite-form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.invite-form-container h2 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.invite-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.invite-form .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.invite-form label {
+  font-weight: 500;
+  color: #34495e;
+}
+
+.invite-form input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #2c3e50;
+}
+
+.invites-table-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.invites-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.invites-table th,
+.invites-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.invites-table th {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.invites-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.code-cell code {
+  background-color: #f4f4f4;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-badge.available {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.used {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.btn-copy {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.btn-copy:hover {
+  background-color: #2980b9;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-page {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-page:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.btn-page:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.page-info {
+  color: #2c3e50;
+  font-weight: 500;
+}
