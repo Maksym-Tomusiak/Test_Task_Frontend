@@ -31,6 +31,15 @@ export const useAuthActions = () => {
         return true;
       } catch (err: any) {
         console.error('Login error:', err);
+
+        // Handle rate limiting
+        if (err.response?.status === 429) {
+          setError(
+            'Too many login attempts. Please wait a minute and try again.'
+          );
+          return false;
+        }
+
         const errorMessage =
           err.response?.data?.error || err.message || 'Login failed';
         setError(errorMessage);
